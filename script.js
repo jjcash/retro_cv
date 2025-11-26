@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectLink.className = 'project-link';
                 projectLink.href = project.link_url;
                 projectLink.textContent = project.link_text;
-                projectLink.target = '_blank'; // Open link in a new tab
+                projectLink.target = '_blank'; 
 
                 projectCard.appendChild(projectName);
                 projectCard.appendChild(projectDesc);

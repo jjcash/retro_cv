@@ -8,7 +8,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-size: 16px;
-    padding: 10px; /* Add some padding for small screens */
+    padding: 10px; 
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ body {
     width: 100%;
     max-width: 800px;
     border: 4px solid #fff;
-    background-color: #000084; /* Classic blue RPG background */
+    background-color: #000084; 
     padding: 16px;
     box-shadow: 0 0 10px #fff, 0 0 20px #fff;
     position: relative;
@@ -60,17 +60,17 @@ body {
 }
 
 .content-section {
-    display: none; /* Hide all sections by default */
+    display: none; 
 }
 
 .content-section.active {
-    display: block; /* Show only the active section */
+    display: block; 
 }
 
 .content-section h2 {
     margin-top: 0;
     font-size: 1.2em;
-    color: #f0e68c; /* A gold-like color for titles */
+    color: #f0e68c;
 }
 
 #contact p {
@@ -84,7 +84,7 @@ body {
 
 .skill-category-title {
     font-size: 1em;
-    color: #f0e68c; /* Gold color like section titles */
+    color: #f0e68c; 
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -190,39 +190,39 @@ body {
 .main-menu a {
     text-decoration: none;
     color: #fff;
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center icon and text */
+    display: flex; 
+    align-items: center; 
     position: relative;
-    word-break: break-word; /* Prevent long words from overflowing */
+    word-break: break-word; 
 }
 
 .main-menu a.active::before {
-    content: ''; /* We'll use background-image instead */
-    background-image: url('/assets/icons/next.png');
+    content: ''; 
+    background-image: url('assets/icons/next.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 16px; /* Set the desired width */
-    height: 16px; /* Set the desired height */
-    margin-right: 10px; /* Space between selector and icon */
+    width: 16px; 
+    height: 16px; 
+    margin-right: 10px; 
     animation: bounce 0.5s infinite alternate;
 }
 
 .main-menu a::after {
     content: '';
     display: inline-block;
-    width: 16px; /* Icon width */
-    height: 16px; /* Icon height */
-    margin-left: 10px; /* Space between selector/text and icon */
+    width: 16px; 
+    height: 16px; 
+    margin-left: 10px; 
     margin-right: 10px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.main-menu a[data-icon="about"]::after { background-image: url('/assets/icons/fc659.png'); }
-.main-menu a[data-icon="skills"]::after { background-image: url('/assets/icons/fc662.png'); }
-.main-menu a[data-icon="projects"]::after { background-image: url('/assets/icons/fc529.png'); }
-.main-menu a[data-icon="experience"]::after { background-image: url('/assets/icons/fc266.png'); }
+.main-menu a[data-icon="about"]::after { background-image: url('assets/icons/fc659.png'); }
+.main-menu a[data-icon="skills"]::after { background-image: url('assets/icons/fc662.png'); }
+.main-menu a[data-icon="projects"]::after { background-image: url('assets/icons/fc529.png'); }
+.main-menu a[data-icon="experience"]::after { background-image: url('assets/icons/fc266.png'); }
 .main-menu a[data-icon="contact"]::after { background-image: url('assets/icons/fc298.png'); }
 
 @keyframes bounce {
@@ -233,20 +233,20 @@ body {
 /* --- Mobile Responsiveness --- */
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* Reduce base font size for readability */
-        align-items: flex-start; /* Align container to the top on mobile */
+        font-size: 14px; 
+        align-items: flex-start; 
     }
 
     .game-container {
-        padding: 10px; /* Reduce padding on smaller screens */
+        padding: 10px; 
     }
 
     .main-header {
-        flex-direction: column; /* Stack title and lang switcher */
-        gap: 15px; /* Add space between them */
+        flex-direction: column; 
+        gap: 15px; 
     }
 
     .title {
-        font-size: 1.3em; /* Slightly reduce title size */
+        font-size: 1.3em; 
     }
 }
