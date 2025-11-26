@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.menu-item');
     const contentSections = document.querySelectorAll('.content-section');
-
+    
     // --- Section Navigation Logic ---
     menuItems.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -32,9 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === konamiCode[konamiIndex]) {
             konamiIndex++;
             if (konamiIndex === konamiCode.length) {
-                // Code entered correctly! Trigger the easter egg.
                 alert('Konami Code Activated! Here is a secret.');
-                // We can do something more fun here later
                 konamiIndex = 0; // Reset for next time
             }
         } else {
@@ -54,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- Render Skills ---
         const skillsContainer = document.getElementById('skills-container');
-        // Use returnObjects: true to get the array from JSON
         const skillsData = i18next.t('skills_list', { returnObjects: true });
         
         // Clear previous skills to prevent duplication on language switch
@@ -164,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             backend: {
                 loadPath: 'locales/{{lng}}.json',
             },
-            compatibilityJSON: 'v3' // Add this line
+            compatibilityJSON: 'v3'
         }, (err, t) => {
             if (err) return console.error(err);
             updateContent();

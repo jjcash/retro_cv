@@ -1,4 +1,4 @@
-/* General body styling */
+/* --- General Styling --- */
 body {
     background-color: #000;
     color: #fff;
@@ -12,7 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-/* The main container that looks like a game screen */
 .game-container {
     width: 100%;
     max-width: 800px;
@@ -23,7 +22,7 @@ body {
     position: relative;
 }
 
-/* Header styles */
+/* --- Header --- */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +37,6 @@ body {
     text-shadow: 2px 2px #ff0000;
 }
 
-/* Language switcher buttons */
 .lang-btn {
     font-family: 'Press Start 2P', cursive;
     background: none;
@@ -53,7 +51,7 @@ body {
     color: #000084;
 }
 
-/* Main content area styling */
+/* --- Content Area --- */
 .content-area {
     min-height: 250px;
     padding: 10px;
@@ -75,12 +73,11 @@ body {
     color: #f0e68c; /* A gold-like color for titles */
 }
 
-/* Preserve line breaks in the contact section */
 #contact p {
     white-space: pre-line;
 }
 
-/* --- Skills Section Styling --- */
+/* --- Skills Section --- */
 .skill-category {
     margin-bottom: 20px;
 }
@@ -107,7 +104,7 @@ body {
     border: 2px solid #fff;
 }
 
-/* --- Projects Section Styling --- */
+/* --- Projects Section --- */
 .project-card {
     background-color: #000;
     border: 2px solid #fff;
@@ -142,7 +139,7 @@ body {
     color: #000;
 }
 
-/* --- Experience Section Styling --- */
+/* --- Experience Section --- */
 .experience-card {
     background-color: #000;
     border: 2px solid #fff;
@@ -178,7 +175,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* Main menu styling */
+/* --- Main Menu --- */
 .main-menu ul {
     list-style: none;
     padding: 10px;
@@ -199,7 +196,6 @@ body {
     word-break: break-word; /* Prevent long words from overflowing */
 }
 
-/* The little hand/arrow selector for the menu */
 .main-menu a.active::before {
     content: ''; /* We'll use background-image instead */
     background-image: url('/assets/icons/next.png');
@@ -212,7 +208,6 @@ body {
     animation: bounce 0.5s infinite alternate;
 }
 
-/* General styling for all menu icons */
 .main-menu a::after {
     content: '';
     display: inline-block;
@@ -224,7 +219,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Assigning each icon using the data-icon attribute */
 .main-menu a[data-icon="about"]::after { background-image: url('/assets/icons/fc659.png'); }
 .main-menu a[data-icon="skills"]::after { background-image: url('/assets/icons/fc662.png'); }
 .main-menu a[data-icon="projects"]::after { background-image: url('/assets/icons/fc529.png'); }
