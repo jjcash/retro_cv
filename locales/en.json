@@ -1,0 +1,17 @@
+{
+    "about_me_title": "About Me",
+    "about_me_content": "Greetings, adventurer! I am Guilherme, a developer with a passion for everything related to computers and technology. My journey in the realm of IT has equipped me with powerful skills in Web Development (Front-end and Back-end), IT Support, and Maintenance. I thrive on solving complex challenges and creating elegant solutions, always seeking to level up my abilities and contribute to impactful projects. This CV is a chronicle of my quests and achievements.",
+    "skills_title": "Skills",
+    "skills_content": "Here are the skills I've collected on my journey. Think of this as my 'Skill Tree'.",
+    "projects_title": "Projects/Portfolio",
+    "projects_content": "A log of all the quests I have completed.",
+    "experience_title": "Work Experience",
+    "experience_content": "The history of my professional journey. Each job is a chapter in my story.",
+    "contact_title": "Contact Information",
+    "contact_content": "Should you wish to send a message or embark on a new quest together, you can reach me through these channels:\n\nEmail: clee.vprice@gmail.com\nLinkedIn: www.linkedin.com/in/guilherme-zampieron-daniel-70b72b229\nGitHub: https://github.com/jjcash\n\nI look forward to hearing from you, fellow traveler!",
+    "menu_about": "About Me",
+    "menu_skills": "Skills",
+    "menu_projects": "Projects",
+    "menu_experience": "Experience",
+    "menu_contact": "Contact"
+}

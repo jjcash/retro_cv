@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CV Quest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.5.2/i18nextHttpBackend.min.js"></script>
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Header with Title and Language Switcher -->
+        <header class="main-header">
+            <h1 class="title">CV Quest</h1>
+            <div class="language-switcher">
+                <button data-lang="en" class="lang-btn active">EN</button>
+                <button data-lang="pt" class="lang-btn">PT</button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Each section will be a "screen" in our game -->
+            <section id="about" class="content-section active">
+                <h2 data-i18n="about_me_title">About Me</h2>
+                <p data-i18n="about_me_content">Welcome to my adventure! I'm a passionate developer on a quest to build amazing things. This is where your 'About Me' text will go.</p>
+            </section>
+
+            <section id="skills" class="content-section">
+                <h2 data-i18n="skills_title">Skills</h2>
+                <p data-i18n="skills_content">Here are the skills I've collected on my journey. Think of this as my 'Skill Tree'.</p>
+                <!-- We can add skill bars or icons here later -->
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2 data-i18n="projects_title">Projects/Portfolio</h2>
+                <p data-i18n="projects_content">A log of all the quests I have completed. This is where your projects will be listed.</p>
+            </section>
+
+            <section id="experience" class="content-section">
+                <h2 data-i18n="experience_title">Work Experience</h2>
+                <p data-i18n="experience_content">The history of my professional journey. Each job is a chapter in my story.</p>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2 data-i18n="contact_title">Contact Information</h2>
+                <p data-i18n="contact_content">Need to send a message? Use one of these carrier pigeons.</p>
+            </section>
+        </main>
+
+        <!-- The main navigation menu -->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#about" class="menu-item active" data-i18n="menu_about">About Me</a></li>
+                <li><a href="#skills" class="menu-item" data-i18n="menu_skills">Skills</a></li>
+                <li><a href="#projects" class="menu-item" data-i18n="menu_projects">Projects</a></li>
+                <li><a href="#experience" class="menu-item" data-i18n="menu_experience">Experience</a></li>
+                <li><a href="#contact" class="menu-item" data-i18n="menu_contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
