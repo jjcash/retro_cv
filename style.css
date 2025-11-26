@@ -142,6 +142,42 @@ body {
     color: #000;
 }
 
+/* --- Experience Section Styling --- */
+.experience-card {
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-role {
+    font-size: 1.1em;
+    color: #f0e68c;
+    margin: 0;
+}
+
+.experience-company {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.experience-details {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #555;
+    padding-bottom: 10px;
+}
+
 /* Main menu styling */
 .main-menu ul {
     list-style: none;

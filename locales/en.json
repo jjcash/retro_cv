@@ -63,5 +63,28 @@
             "link_text": "View Quest",
             "link_url": "https://jjcash.github.io/TinDog/"
         }
+    ],
+    "experience_list": [
+        {
+            "role": "IT Support Specialist",
+            "company": "JV Tintas",
+            "period": "Jan 2024 - Present",
+            "location": "Paraí, Rio Grande do Sul, Brazil (Hybrid)",
+            "description": "Responsible for IT infrastructure and process optimization using Microsoft Excel."
+        },
+        {
+            "role": "IT Support Technician",
+            "company": "Uniftec",
+            "period": "May 2023 - Aug 2023",
+            "location": "Caxias do Sul, Rio Grande do Sul, Brazil (On-site)",
+            "description": "Provided technical support for hardware and software, ensuring efficient problem resolution for users."
+        },
+        {
+            "role": "IT Intern",
+            "company": "Uniftec",
+            "period": "Jun 2022 - Mar 2023",
+            "location": "Caxias do Sul, Rio Grande do Sul, Brazil",
+            "description": "Collaborated with the IT team in an agile environment, assisting in the development and maintenance of internal systems."
+        }
     ]
 }

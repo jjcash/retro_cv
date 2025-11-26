@@ -115,6 +115,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 projectsContainer.appendChild(projectCard);
             });
         }
+
+        // --- Render Experience ---
+        const experienceContainer = document.getElementById('experience-container');
+        const experienceData = i18next.t('experience_list', { returnObjects: true });
+
+        experienceContainer.innerHTML = '';
+
+        if (experienceData && Array.isArray(experienceData)) {
+            experienceData.forEach(job => {
+                const jobCard = document.createElement('div');
+                jobCard.className = 'experience-card';
+
+                const jobHeader = document.createElement('div');
+                jobHeader.className = 'experience-header';
+
+                const jobRole = document.createElement('h3');
+                jobRole.className = 'experience-role';
+                jobRole.textContent = job.role;
+
+                const jobCompany = document.createElement('p');
+                jobCompany.className = 'experience-company';
+                jobCompany.textContent = job.company;
+
+                const jobDetails = document.createElement('p');
+                jobDetails.className = 'experience-details';
+                jobDetails.textContent = `${job.period} · ${job.location}`;
+
+                const jobDesc = document.createElement('p');
+                jobDesc.className = 'experience-description';
+                jobDesc.textContent = job.description;
+
+                jobHeader.appendChild(jobRole);
+                jobHeader.appendChild(jobCompany);
+                jobCard.appendChild(jobHeader);
+                jobCard.appendChild(jobDetails);
+                jobCard.appendChild(jobDesc);
+                experienceContainer.appendChild(jobCard);
+            });
+        }
     };
 
     i18next

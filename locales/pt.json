@@ -63,5 +63,28 @@
             "link_text": "Ver Missão",
             "link_url": "https://jjcash.github.io/TinDog/"
         }
+    ],
+    "experience_list": [
+        {
+            "role": "Especialista em suporte de TI",
+            "company": "JV Tintas",
+            "period": "Jan 2024 - O momento",
+            "location": "Paraí, Rio Grande do Sul, Brasil (Híbrida)",
+            "description": "Responsável pela infraestrutura de TI e otimização de processos utilizando Microsoft Excel."
+        },
+        {
+            "role": "Técnico de suporte em TI",
+            "company": "Uniftec",
+            "period": "Mai 2023 - Ago 2023",
+            "location": "Caxias do Sul, Rio Grande do Sul, Brasil (Presencial)",
+            "description": "Forneci suporte técnico para hardware e software, garantindo a resolução eficiente de problemas para usuários."
+        },
+        {
+            "role": "Estagiário de TI",
+            "company": "Uniftec",
+            "period": "Jun 2022 - Mar 2023",
+            "location": "Caxias do Sul, Rio Grande do Sul, Brasil",
+            "description": "Colaborei com a equipe de TI em um ambiente ágil, auxiliando no desenvolvimento e manutenção de sistemas internos."
+        }
     ]
 }
