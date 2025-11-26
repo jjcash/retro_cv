@@ -80,6 +80,68 @@ body {
     white-space: pre-line;
 }
 
+/* --- Skills Section Styling --- */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category-title {
+    font-size: 1em;
+    color: #f0e68c; /* Gold color like section titles */
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #000;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+}
+
+/* --- Projects Section Styling --- */
+.project-card {
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.project-name {
+    font-size: 1.1em;
+    color: #f0e68c;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5a5a5a;
+    color: #fff;
+    padding: 8px 12px;
+    border: 2px solid #fff;
+    transition: background-color 0.2s;
+}
+
+.project-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 /* Main menu styling */
 .main-menu ul {
     list-style: none;
@@ -95,20 +157,43 @@ body {
 .main-menu a {
     text-decoration: none;
     color: #fff;
-    display: block;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center icon and text */
     position: relative;
-    padding-left: 30px; /* Space for the selector */
     word-break: break-word; /* Prevent long words from overflowing */
 }
 
 /* The little hand/arrow selector for the menu */
 .main-menu a.active::before {
-    content: '►'; /* You can replace this with a pixel art hand icon */
-    position: absolute;
-    left: 0;
-    top: 0;
+    content: ''; /* We'll use background-image instead */
+    background-image: url('/assets/icons/next.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px; /* Set the desired width */
+    height: 16px; /* Set the desired height */
+    margin-right: 10px; /* Space between selector and icon */
     animation: bounce 0.5s infinite alternate;
 }
+
+/* General styling for all menu icons */
+.main-menu a::after {
+    content: '';
+    display: inline-block;
+    width: 16px; /* Icon width */
+    height: 16px; /* Icon height */
+    margin-left: 10px; /* Space between selector/text and icon */
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Assigning each icon using the data-icon attribute */
+.main-menu a[data-icon="about"]::after { background-image: url('/assets/icons/fc659.png'); }
+.main-menu a[data-icon="skills"]::after { background-image: url('/assets/icons/fc662.png'); }
+.main-menu a[data-icon="projects"]::after { background-image: url('/assets/icons/fc529.png'); }
+.main-menu a[data-icon="experience"]::after { background-image: url('/assets/icons/fc266.png'); }
+.main-menu a[data-icon="contact"]::after { background-image: url('assets/icons/fc298.png'); }
 
 @keyframes bounce {
     from { transform: translateX(0); }

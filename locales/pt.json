@@ -2,7 +2,7 @@
     "about_me_title": "Sobre Mim",
     "about_me_content": "Saudações, aventureiro(a)! Eu sou Guilherme, um desenvolvedor com paixão por tudo que se refere a computadores e tecnologia. Minha jornada no reino de TI me equipou com poderosas habilidades em Web Development (Front-end e Back-end), Suporte de TI e Manutenção. Eu prospero resolvendo desafios complexos e criando soluções elegantes, sempre buscando aprimorar minhas habilidades e contribuir para projetos impactantes. Este CV é uma crônica das minhas missões e conquistas.",
     "skills_title": "Habilidades",
-    "skills_content": "Aqui estão as habilidades que coletei na minha jornada. Pense nisso como minha 'Árvore de Habilidades'.",
+    "skills_content": "Aqui estão as habilidades que coletei na minha jornada. Pense nisso como minha 'Árvore de Habilidades'. Espero continuar aprendendo e evoluindo!",
     "projects_title": "Projetos/Portfólio",
     "projects_content": "Um registro de todas as missões que completei.",
     "experience_title": "Experiência Profissional",
@@ -13,5 +13,55 @@
     "menu_skills": "Habilidades",
     "menu_projects": "Projetos",
     "menu_experience": "Experiência",
-    "menu_contact": "Contato"
+    "menu_contact": "Contato",
+    "skills_list": [
+        {
+            "category": "Linguagens",
+            "items": ["TypeScript", "JavaScript", "HTML5", "CSS3", "Python", "Java"]
+        },
+        {
+            "category": "Front-End",
+            "items": ["React", "Bootstrap"]
+        },
+        {
+            "category": "Back-End",
+            "items": ["Node.js", "Express"]
+        },
+        {
+            "category": "Ferramentas e Outros",
+            "items": ["GitHub", "Docker", "Figma"]
+        }
+    ],
+    "projects_list": [
+        {
+            "name": "JV Tintas",
+            "description": "Website criado para a empresa JV Tintas.",
+            "link_text": "Ver Missão",
+            "link_url": "https://jjcash.github.io/jv-tintas/"
+        },
+        {
+            "name": "Jogo da Forca",
+            "description": "Um clássico jogo da forca construído apenas com HTML, CSS e JavaScript. Um projeto divertido para praticar o uso dessas ferramentas.",
+            "link_text": "Ver Missão",
+            "link_url": "https://jjcash.github.io/jogo_da_forca/"
+        },
+        {
+            "name": "Idle Clicker",
+            "description": "Um jogo incremental/clicker desenvolvido usando HTML, CSS e JavaScript. Possui sistema de save e upgrades.",
+            "link_text": "Ver Missão",
+            "link_url": "https://jjcash.github.io/idle-clicker/"
+        },
+        {
+            "name": "SubdomainFinder",
+            "description": "Uma ferramenta de segurança para descobrir subdomínios de um determinado domínio. Escrito em Python. Criado para a disciplina de Segurança da Informação.",
+            "link_text": "Ver Missão",
+            "link_url": "https://github.com/jjcash/SubdomainFinder"
+        },
+        {
+            "name": "TinDog",
+            "description": "Uma landing page fictícia para um 'Tinder para cachorros'. Um projeto para praticar front-end.",
+            "link_text": "Ver Missão",
+            "link_url": "https://jjcash.github.io/TinDog/"
+        }
+    ]
 }

@@ -51,6 +51,70 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.getAttribute('data-i18n');
             el.innerHTML = i18next.t(key);
         });
+
+        // --- Render Skills ---
+        const skillsContainer = document.getElementById('skills-container');
+        // Use returnObjects: true to get the array from JSON
+        const skillsData = i18next.t('skills_list', { returnObjects: true });
+        
+        // Clear previous skills to prevent duplication on language switch
+        skillsContainer.innerHTML = '';
+
+        if (skillsData && Array.isArray(skillsData)) {
+            skillsData.forEach(category => {
+                const categoryElement = document.createElement('div');
+                categoryElement.className = 'skill-category';
+
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.className = 'skill-category-title';
+                categoryTitle.textContent = category.category;
+                categoryElement.appendChild(categoryTitle);
+
+                const skillList = document.createElement('ul');
+                skillList.className = 'skill-list';
+                category.items.forEach(item => {
+                    const skillItem = document.createElement('li');
+                    skillItem.className = 'skill-item';
+                    skillItem.textContent = item;
+                    skillList.appendChild(skillItem);
+                });
+                categoryElement.appendChild(skillList);
+                skillsContainer.appendChild(categoryElement);
+            });
+        }
+
+        // --- Render Projects ---
+        const projectsContainer = document.getElementById('projects-container');
+        const projectsData = i18next.t('projects_list', { returnObjects: true });
+
+        projectsContainer.innerHTML = '';
+
+        if (projectsData && Array.isArray(projectsData)) {
+            projectsData.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+
+                const projectName = document.createElement('h3');
+                projectName.className = 'project-name';
+                projectName.textContent = project.name;
+
+                const projectDesc = document.createElement('p');
+                projectDesc.className = 'project-description';
+                projectDesc.textContent = project.description;
+
+                const projectLink = document.createElement('a');
+                projectLink.className = 'project-link';
+                projectLink.href = project.link_url;
+                projectLink.textContent = project.link_text;
+                projectLink.target = '_blank'; // Open link in a new tab
+
+                projectCard.appendChild(projectName);
+                projectCard.appendChild(projectDesc);
+                projectCard.appendChild(projectLink);
+
+                projectsContainer.appendChild(projectCard);
+            });
+        }
     };
 
     i18next
@@ -59,8 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
             lng: 'en', // default language
             fallbackLng: 'en',
             backend: {
-                loadPath: 'locales/{{lng}}.json'
-            }
+                loadPath: 'locales/{{lng}}.json',
+            },
+            compatibilityJSON: 'v3' // Add this line
         }, (err, t) => {
             if (err) return console.error(err);
             updateContent();
